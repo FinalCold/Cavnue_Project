@@ -1,0 +1,40 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./dataset2/train/images/
+val: ./dataset2/val/images/
+
+# number of classes
+nc: 32
+
+# class names
+names: ['Vehicle_Car',
+'Vehicle_Bus',
+'Vehicle_Motorcycle',
+'Vehicle_Unknown',
+'Pedestrian_Pedestrian',
+'Pedestrian_Bicycle',
+'Lane_White_Dash',
+'Lane_White_Solid',
+'Lane_Yellow_Dash',
+'Lane_Yellow_Solid',
+'Lane_Blue_Dash',
+'Lane_Blue_Solid',
+'TrafficLight_Red',
+'TrafficLight_Yellow',
+'TrafficLight_Green',
+'TrafficLight_Arrow',
+'TrafficLight_RedArrow',
+'TrafficLight_YellowArrow',
+'TrafficLight_GreenArrow',
+'TrafficSign_Speed',
+'TrafficSign_Else',
+'RoadMark_StopLine',
+'RoadMark_Crosswalk',
+'RoadMark_Number',
+'RoadMark_Character',
+'RoadMarkArrow_Straight',
+'RoadMarkArrow_Left',
+'RoadMarkArrow_Right',
+'RoadMarkArrow_StraightLeft',
+'RoadMarkArrow_StraightRight',
+'RoadMarkArrow_Uturn',
+'RoadMarkArrow_Else']
