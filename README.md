@@ -21,15 +21,16 @@ $ pip install -r requirements.txt
 ```
 ## Preparing Dataset
 
-Before you train your dataset the annotation file using .txt format(YOLO). you can generate VOC format to Yolo format with below command
+You can generate VOC format(.xml) to Yolo format(.txt) with below command before training the dataset 
 ```bash
-$ python generate_dataset.py --img_path /path/dir --label /path/dir --volume 10000
+$ python generate_dataset.py --img_path /path/dir --label /path/dir --volume 5
 ```
-then, you can get 10000 amount of dataset including images and labels
+Then, you can get ((training_data) * 1/5) amount of dataset including images and labels.
+and it automatically split the dataset to train : val = 9 : 1
 
 ## Training
 
-Download [COCO](https://github.com/ultralytics/yolov5/blob/master/data/scripts/get_coco.sh) and run command below. Training times for YOLOv5s/m/l/x are 2/4/6/8 days on a single V100 (multi-GPU times faster). Use the largest `--batch-size` your GPU allows (batch sizes shown for 16 GB devices).
+Training times for YOLOv5s/m/l/x are 2/4/6/8 days on a single V100 (multi-GPU times faster). Use the largest `--batch-size` your GPU allows (batch sizes shown for 16 GB devices).
 ```bash
 $ python train.py --data nia.yaml --weights yolov5m.pt --batch-size 32 --img 640
 ```
@@ -40,13 +41,5 @@ $ python train.py --data nia.yaml --weights yolov5m.pt --batch-size 32 --img 640
 
 To run inference on example images in `data/images`:
 ```bash
-$ python inference.py --source data/images --weights best.pt
+$ python inference.py --source data/images --weights best.pt --save-xml
 ```
-
-## Citation
-
-[![DOI](https://zenodo.org/badge/264818686.svg)](https://zenodo.org/badge/latestdoi/264818686)
-
-## Contact
-
-**Issues should be raised directly in the repository.** For business inquiries or professional support requests please visit https://www.ultralytics.com or email Glenn Jocher at glenn.jocher@ultralytics.com. 
