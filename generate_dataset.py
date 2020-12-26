@@ -24,7 +24,7 @@ parser.add_argument('--img_type', type=str, default='.jpg',
 parser.add_argument('--manifest_path', type=str,
                     help='directory of manipast file', default="./")
 parser.add_argument('--cls_list_file', type=str,
-                    help='directory of *.names file', default="./nia.names")
+                    help='directory of *.names file', default="./data/nia.names")
 
 args = parser.parse_args()
 
