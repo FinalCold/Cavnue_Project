@@ -2,7 +2,7 @@ This repository represents Ultralytics open-source research into future object d
 
 # Team Cavnue
 
-## NIA 2020 Online Conteset
+## NIA 2020 Online Contest
 
 ## Pretrained Checkpoints
 
