@@ -1,6 +1,8 @@
 - - -
+This repository is based on yolov5
 https://github.com/ultralytics/yolov5
 
+Some generate code is based on convert2Yolo
 https://github.com/ssaru/convert2Yolo
 
 - - -
