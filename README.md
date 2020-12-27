@@ -90,5 +90,4 @@ OpenCV
 ````
 
 - - -
-## NIA 2020 Online Contest
 ![poster](https://user-images.githubusercontent.com/67350632/103162774-0558b480-4838-11eb-9f25-a42da5ad708b.png)
