@@ -137,15 +137,32 @@ def detect(save_img=False):
                 indent(root)
                 tree = ET.ElementTree(root)
                 
-                
-                date_dir = p.stem[2:18]
-                result_dir = str(p.stem[0]) + '_result'
+                date_dir = p.stem[2:17]
+                result_dir = str(p.stem[0]) + '_Result'
                 
                 (save_dir / 'xmls' / date_dir / result_dir).mkdir(parents=True, exist_ok=True)
                 xml_path = str(save_dir / 'xmls' / date_dir / result_dir / p.stem) # directory to save .xml
                 
                 tree.write(xml_path + '_v001_1' + '.xml', encoding='UTF-8', xml_declaration=True)
                 
+            elif len(det) == 0:
+            
+                if save_xml:
+                
+                    root = ET.Element('annotation')
+                    
+                    indent(root)
+                    tree = ET.ElementTree(root)
+                    
+                    date_dir = p.stem[2:17]
+                    result_dir = str(p.stem[0]) + '_Result'
+                    
+                    (save_dir / 'xmls' / date_dir / result_dir).mkdir(parents=True, exist_ok=True)
+                    xml_path = str(save_dir / 'xmls' / date_dir / result_dir / p.stem) # directory to save .xml
+                
+                    tree.write(xml_path + '_v001_1' + '.xml', encoding='UTF-8', xml_declaration=True)
+                
+                    
             # Print time (inference + NMS)
             print(f'{s}Done. ({t2 - t1:.3f}s)')
 
@@ -184,8 +201,8 @@ if __name__ == '__main__':
     parser.add_argument('--weights', nargs='+', type=str, default='best.pt', help='model.pt path(s)')
     parser.add_argument('--source', type=str, default='data/images', help='source')  # file/folder, 0 for webcam
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
-    parser.add_argument('--conf-thres', type=float, default=0.25, help='object confidence threshold')
-    parser.add_argument('--iou-thres', type=float, default=0.45, help='IOU threshold for NMS')
+    parser.add_argument('--conf-thres', type=float, default=0.1, help='object confidence threshold')
+    parser.add_argument('--iou-thres', type=float, default=0.6, help='IOU threshold for NMS')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--view-img', action='store_true', help='display results')
     parser.add_argument('--save-txt', action='store_true', help='save results to *.txt')
