@@ -1,8 +1,8 @@
 - - -
-This repository is based on yolov5
+This repository is based on yolov5.
 https://github.com/ultralytics/yolov5
 
-Some generate code is based on convert2Yolo
+Some generated codes are based on convert2Yolo.
 https://github.com/ssaru/convert2Yolo
 
 - - -
@@ -11,11 +11,11 @@ ChanJong Park (박찬종)
 ````
 * Email : cjpark137@naver.com
 ````
-JongWook Bae  (배종욱)
+JongWook Bae (배종욱)
 ````
 * Email : bjonguk@gmail.com
 ````
-JunYeong Heo  (허준영)
+JunYeong Heo (허준영)
 ````
 * Email : jass9869@naver.com
 ````
