@@ -15,7 +15,7 @@ JongWook Bae  (배종욱)
 ````
 * Email : bjonguk@gmail.com
 ````
-JunYeong Heo  (허준영)11
+JunYeong Heo  (허준영)
 ````
 * Email : jass9869@naver.com
 ````
