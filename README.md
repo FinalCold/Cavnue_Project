@@ -86,4 +86,4 @@ Python
 OpenCV
 ````
 - - -
-!(/home/mds/Downloads/poster.png)
+![2020 Online Contest](/home/mds/Downloads/poster.png)
