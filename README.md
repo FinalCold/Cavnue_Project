@@ -1,6 +1,19 @@
 This repository represents Ultralytics open-source research into future object detection methods, and incorporates our lessons learned and best practices evolved over training thousands of models on custom client datasets with our previous YOLO repository https://github.com/ultralytics/yolov3. **All code and models are under active development, and are subject to modification or deletion without notice.** Use at your own risk.
 
 # Team Carvnue
+ChanJong Park (박찬종)
+````
+* Email : cjpark137@naver.com
+````
+JongWook Bae  (배종욱)
+````
+* Email : bjonguk@gmail.com
+````
+JunYeong Heo  (허준영)
+````
+* Email : jass9869@naver.com
+````
+
 
 ## NIA 2020 Online Contest
 
@@ -45,3 +58,28 @@ To run inference on example images in `data/images`:
 ```bash
 $ python inference.py --source data/images --weights best.pt --save-xml
 ```
+
+### 개발 언어
+````
+* Python
+* Cuda
+````
+### 개발 환경
+````
+Ubuntu 18.04 LTS
+OpenCV 4.4.0
+Cuda 10.1
+CuDNN 7.6.5
+Python 3.8
+PyTorch 1.7.1
+````
+### 사용 GPU
+````
+Nvidia Geforce Titan X 12Gb * 2
+````
+### 주요 라이브러리
+````
+Yolo v5
+Python
+OpenCV
+````
