@@ -68,7 +68,7 @@ $ python inference.py --source data/images --weights best.pt --save-xml
 * Python
 * Cuda
 ````
-### Development Invironment
+### Development Environment
 ````
 Ubuntu 18.04 LTS
 OpenCV 4.4.0
