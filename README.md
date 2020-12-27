@@ -61,12 +61,12 @@ To run inference on example images in `data/images`:
 $ python inference.py --source data/images --weights best.pt --save-xml
 ```
 - - -
-### 개발 언어
+### Development Languages
 ````
 * Python
 * Cuda
 ````
-### 개발 환경
+### Development Inviroment
 ````
 Ubuntu 18.04 LTS
 OpenCV 4.4.0
@@ -75,11 +75,11 @@ CuDNN 7.6.5
 Python 3.8
 PyTorch 1.7.1
 ````
-### 사용 GPU
+### GPU
 ````
 Nvidia Geforce Titan X 12Gb * 2
 ````
-### 주요 라이브러리
+### Libraries
 ````
 Yolo v5
 Python
