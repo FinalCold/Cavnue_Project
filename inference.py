@@ -50,7 +50,7 @@ def detect(save_img=False):
         cudnn.benchmark = True  # set True to speed up constant image size inference
         dataset = LoadStreams(source, img_size=imgsz)
     else:
-        save_img = False
+        save_img = True
         dataset = LoadImages(source, img_size=imgsz)
 
     # Get names and colors
@@ -129,6 +129,9 @@ def detect(save_img=False):
                             ET.SubElement(bbox, 'ymin').text = str(y1)
                             ET.SubElement(bbox, 'xmax').text = str(x2)
                             ET.SubElement(bbox, 'ymax').text = str(y2)
+                            if opt.save_conf:
+                                conftag = ET.SubElement(obj, 'score')
+                                conftag.text = conf
 
                     if save_img or view_img:  # Add bbox to image
                         label = f'{names[int(cls)]} {conf:.2f}'
@@ -201,8 +204,8 @@ if __name__ == '__main__':
     parser.add_argument('--weights', nargs='+', type=str, default='best.pt', help='model.pt path(s)')
     parser.add_argument('--source', type=str, default='data/images', help='source')  # file/folder, 0 for webcam
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
-    parser.add_argument('--conf-thres', type=float, default=0.1, help='object confidence threshold')
-    parser.add_argument('--iou-thres', type=float, default=0.6, help='IOU threshold for NMS')
+    parser.add_argument('--conf-thres', type=float, default=0.0, help='object confidence threshold')
+    parser.add_argument('--iou-thres', type=float, default=0.45, help='IOU threshold for NMS')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--view-img', action='store_true', help='display results')
     parser.add_argument('--save-txt', action='store_true', help='save results to *.txt')
