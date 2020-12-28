@@ -6,7 +6,7 @@ Some generated codes are based on convert2Yolo.
 https://github.com/ssaru/convert2Yolo
 
 - - -
-# Team Carvnue
+# Team Cavnue
 ChanJong Park (박찬종)
 ````
 * Email : cjpark137@naver.com
