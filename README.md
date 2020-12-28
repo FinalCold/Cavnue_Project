@@ -21,7 +21,7 @@ JunYeong Heo (허준영)
 * Email : jass9869@naver.com
 ````
 - - -
-# 
+# Video
 
 ![gitvideo](https://user-images.githubusercontent.com/69332997/103191533-af0f7280-4918-11eb-859c-82f101a3ee72.gif)
 
