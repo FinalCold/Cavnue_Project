@@ -50,7 +50,7 @@ def detect(save_img=False):
         cudnn.benchmark = True  # set True to speed up constant image size inference
         dataset = LoadStreams(source, img_size=imgsz)
     else:
-        save_img = True
+        save_img = False
         dataset = LoadImages(source, img_size=imgsz)
 
     # Get names and colors
@@ -117,21 +117,23 @@ def detect(save_img=False):
                         _xyxy = torch.tensor(xyxy).view(-1).tolist()
                         x1, y1, x2, y2 = int(_xyxy[0]), int(_xyxy[1]), int(_xyxy[2]), int(_xyxy[3])
                         _cls = torch.tensor(cls).view(-1).tolist()
+                        _conf = torch.tensor(conf).view(-1).tolist()
                         
                         cls_name = check_cls(int(_cls[0]))
                         if cls_name is not None:
                         
                             obj = ET.SubElement(root, 'object')
                             name = ET.SubElement(obj, 'name').text = cls_name
+                            if opt.save_conf:
+                                conftag = ET.SubElement(obj, 'score')
+                                conftag.text = str(_conf[0])
                             bbox = ET.SubElement(obj, 'bndbox')
                             
                             ET.SubElement(bbox, 'xmin').text = str(x1)
                             ET.SubElement(bbox, 'ymin').text = str(y1)
                             ET.SubElement(bbox, 'xmax').text = str(x2)
                             ET.SubElement(bbox, 'ymax').text = str(y2)
-                            if opt.save_conf:
-                                conftag = ET.SubElement(obj, 'score')
-                                conftag.text = conf
+                            
 
                     if save_img or view_img:  # Add bbox to image
                         label = f'{names[int(cls)]} {conf:.2f}'
