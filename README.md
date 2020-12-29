@@ -17,14 +17,14 @@ ChanJong Park (박찬종)
 * Email : cjpark137@naver.com
 ````
 
-![bju](https://user-images.githubusercontent.com/69332997/103256035-096b0a80-49cf-11eb-8a51-58df5e593537.jpg){: width="20%" height="20%"}
+<img src="https://user-images.githubusercontent.com/69332997/103256035-096b0a80-49cf-11eb-8a51-58df5e593537.jpg" width="20%" height="20%">
 
 JongWook Bae (배종욱)
 ````
 * Email : bjonguk@gmail.com
 ````
 
-![hjy](https://user-images.githubusercontent.com/69332997/103256032-07a14700-49cf-11eb-9f9f-f31eab4bfdad.jpg){: width="20%" height="20%"}
+<img src="https://user-images.githubusercontent.com/69332997/103256032-07a14700-49cf-11eb-9f9f-f31eab4bfdad.jpg" width="20%" height="20%">
 
 JunYeong Heo (허준영)
 ````
