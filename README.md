@@ -9,7 +9,8 @@ https://github.com/ssaru/convert2Yolo
 - - -
 # Team Cavnue
 
-![pch](https://user-images.githubusercontent.com/69332997/103256027-03752980-49cf-11eb-9a0d-bb2c13156e7b.jpg){: width="20%" height="20%"}
+
+<img src="https://user-images.githubusercontent.com/69332997/103256189-9dd56d00-49cf-11eb-99f0-a91646f3fb2d.jpg" width="20%" height="20%">
 
 ChanJong Park (박찬종)
 ````
