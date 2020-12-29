@@ -8,14 +8,23 @@ https://github.com/ssaru/convert2Yolo
 
 - - -
 # Team Cavnue
+
+![pch](https://user-images.githubusercontent.com/69332997/103256027-03752980-49cf-11eb-9a0d-bb2c13156e7b.jpg)
+
 ChanJong Park (박찬종)
 ````
 * Email : cjpark137@naver.com
 ````
+
+![bju](https://user-images.githubusercontent.com/69332997/103256035-096b0a80-49cf-11eb-8a51-58df5e593537.jpg)
+
 JongWook Bae (배종욱)
 ````
 * Email : bjonguk@gmail.com
 ````
+
+![hjy](https://user-images.githubusercontent.com/69332997/103256032-07a14700-49cf-11eb-9f9f-f31eab4bfdad.jpg)
+
 JunYeong Heo (허준영)
 ````
 * Email : jass9869@naver.com
